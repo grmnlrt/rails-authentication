@@ -5,7 +5,7 @@
 
       <% if user_signed_in? %>
         <p>Hello <%= current_user.nickname || current_user.email %>!</p>
-        <%= link_to "Discovers restaurants", restaurants_path, class: "btn btn-outline-primary" %>
+        <%= link_to "Discovers restaurants", restaurants_path, class: "btn btn-info" %>
       <% else %>
         <p>You're not log yet.</p>
       <% end %>

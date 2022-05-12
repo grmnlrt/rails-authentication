@@ -1,8 +1,16 @@
-<h1>Pages#home</h1>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1 class="mt-4">Pages#home</h1>
 
-<% if user_signed_in? %>
-  <p>Hello <%= current_user.nickname %>!</p>
-<% else %>
-  <p>You're not log yet.</p>
-<% end %>
+      <% if user_signed_in? %>
+        <p>Hello <%= current_user.email %>!</p>
+        <%= link_to "Discovers restaurants", restaurants_path, class: "btn btn-primary" %>
+      <% else %>
+        <p>You're not log yet.</p>
+      <% end %>
+    </div>
+  </div>
+</div>
+
 
